@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <img class="gambar" src="images/logo.png" alt="" />
+          </li>
+          <li>
+            <a class="jarak" href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">My Project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <form>
+      <div>
+        <h2>GET IN TOUCH</h2>
+      </div>
+      <div>
+        <label for="input-name">Name</label> <br />
+        <input type="text" id="input-name" />
+      </div>
+      <div>
+        <label for="input-email">Email</label> <br />
+        <input type="email" id="input-email" />
+      </div>
+      <div>
+        <label for="input-phone">Phone Number</label> <br />
+        <input type="number" id="input-phone" />
+      </div>
+      <div>
+        <label for="input-subject">Subject</label> <br />
+        <select id="input-subject">
+          <option value="" hidden></option>
+          <option value="FullStack">FullStack</option>
+          <option value="FrontEnd">FrontEnd</option>
+          <option value="BackEnd">BackEnd</option>
+        </select>
+      </div>
+      <div>
+        <label for="input-message">Your Message</label> <br />
+        <textarea id="input-message" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <button type="button" onclick="tipeData()">submit</button>
+      </div>
+    </form>
+    <script src="contact.js"></script>
+  </body>
+</html>

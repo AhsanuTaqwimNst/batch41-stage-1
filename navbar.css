@@ -1,0 +1,49 @@
+nav {
+  background-color: #f4f3f3;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.tebal {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right a {
+  color: white;
+  background-color: black;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+
+.nav-left {
+  width: 50%;
+  padding-left: 40px;
+}
+
+.nav-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+nav div ul li img {
+  width: 50px;
+}
+nav ul li a {
+  font-family: sans-serif;
+}
+.jarak {
+  padding: 0px 30px;
+  font-family: sans-serif;
+}
