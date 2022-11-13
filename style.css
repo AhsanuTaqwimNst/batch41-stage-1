@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+  background-color: #e2e6ea;
+}
+
+li {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.card-left {
+  width: 80%;
+}
+.card-lefti {
+  width: 500px;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.card-right {
+  width: 300px;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-right img {
+  width: 100%;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  margin: 50px auto;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-between;
+  margin: 30px auto;
+  padding: 30px;
+}
+button {
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  padding: 8px 30px;
+  margin-right: 20px;
+}
+.fa-download {
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+}
+.sosmed {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: left;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.sosmed a {
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.sosmed a i {
+  font-size: 25px;
+}

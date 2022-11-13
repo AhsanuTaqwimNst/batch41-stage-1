@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog Project</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <img class="gambar" src="images/logo.png" alt="" />
+          </li>
+          <li>
+            <a class="jarak" href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">My Project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <div>
+      <div class="project-form">
+        <h2>Add New Project</h2>
+        <form
+          id="input-form"
+          class="input-form"
+          onsubmit="addProject(event)"
+          ;
+          return
+          false
+        >
+          <div class="input">
+            <label for="project-name">Project Name</label>
+            <input type="text" id="project-name" />
+          </div>
+          <div class="input-row">
+            <div class="input">
+              <label for="start-date">Start Date</label>
+              <input type="date" id="start-date" />
+            </div>
+            <div class="input">
+              <label for="end-date">End Date</label>
+              <input type="date" id="end-date" />
+            </div>
+          </div>
+          <div class="input">
+            <label for="project-description">Project Description</label>
+            <textarea id="project-description" cols="30" rows="10"></textarea>
+          </div>
+          <div class="input">
+            <label for="">Technologies</label>
+            <div class="input-grid">
+              <div class="input-checkbox">
+                <input type="checkbox" id="use-java" />
+                <label for="use-java">Java</label>
+              </div>
+              <div class="input-checkbox">
+                <input type="checkbox" id="use-node-js" />
+                <label for="use-node-js">Node JS</label>
+              </div>
+              <div class="input-checkbox">
+                <input type="checkbox" id="use-react" />
+                <label for="use-react">React</label>
+              </div>
+              <div class="input-checkbox">
+                <input type="checkbox" id="use-facebook" />
+                <label for="use-facebook">Facebook</label>
+              </div>
+            </div>
+          </div>
+          <div class="input">
+            <label for="upload-image">Upload Image</label>
+            <input type="file" id="upload-image" />
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="project-container">
+        <h2>My Project</h2>
+        <div class="project-content" id="project-content">
+          <div class="project-item">
+            <a href="blog-project.html"
+              ><img src="images/biari.jpg" alt=""
+            /></a>
+            <div class="project-detail">
+              <h3>Project Title</h3>
+              <p>Duration: 2 Month(s)</p>
+            </div>
+            <div class="project-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                ratione saepe reiciendis veniam nesciunt ipsa? Sit, tenetur,
+                minus velit laboriosam expedita quidem repudiandae debitis dicta
+                dolorem facilis rem facere reprehenderit. Ducimus quod, ad eos
+                eaque eum doloribus provident at temporibus repellendus sed
+                nulla natus ea deleniti dolores tempora nobis ab obcaecati
+                reiciendis, quas molestiae magnam! Ad voluptatem ullam unde ab?
+              </p>
+            </div>
+            <div class="project-tech">
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-node-js"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="action-btn">
+              <button class="btn">edit</button>
+              <button class="btn">delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="blog.js"></script>
+  </body>
+</html>

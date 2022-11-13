@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #e3e7eb;
+}
+
+/* PROJECT FORM */
+.project-form {
+  background: #e3e7eb;
+  width: 600px;
+  margin: 100px auto 50px;
+  padding: 20px;
+}
+
+.project-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-form .input-form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.input-form .input {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.input-form .input-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input input,
+.input textarea {
+  padding: 10px;
+  width: 100%;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.input textarea {
+  resize: none;
+}
+
+.input .input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px 30px;
+}
+
+.input-grid .input-checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.input-checkbox input {
+  padding: none;
+  width: auto;
+}
+
+.input input[type="file"] {
+  background: #f8f8f8;
+  padding: 0;
+}
+
+::-webkit-file-upload-button {
+  padding: 5px 10px;
+}
+
+.input-form button {
+  padding: 5px 30px;
+  align-self: end;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.input-form button:hover {
+  background-color: aqua;
+}
+
+/* PROJECT CONTAINER */
+.project-container {
+  background: lightgray;
+  max-width: 1200px;
+  margin: 100px auto 0;
+  padding: 20px;
+}
+
+.project-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-container .project-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.project-content .project-item {
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.project-item img {
+  border-radius: 10px 10px 0 0;
+  width: 90%;
+  padding: 10px 20px;
+}
+
+.project-item .project-detail {
+  padding: 10px;
+}
+
+.project-item .project-description {
+  padding: 10px;
+  text-align: justify;
+}
+
+.project-item .project-tech {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  align-items: center;
+  gap: 15px;
+}
+
+.project-item .action-btn {
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.action-btn button {
+  padding: 10px 50px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
